@@ -9,17 +9,14 @@ class Calculator {
     }
 
     addDigit(digit) {
-
-        if (digit === '.' && this.currentOperationText.innerText.includes('.')) {
+            if (digit === '.' && this.currentOperationText.innerText.includes('.')) {
             return
         }
-
         this.currentOperation = digit
         this.updateScreen()
     }
 
     processOperation(operation) {
-
         if (this.currentOperationText.innerText === " ") {
             if (this.previousOperationText.innerText !== " " && operation !== "C") {
                 this.changeOperation(operation);
@@ -65,8 +62,6 @@ class Calculator {
                 case "=":
                     this.processEqualOperator();
                     break;
-
-
             default:
                 return;
 
