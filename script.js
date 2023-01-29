@@ -64,9 +64,7 @@ class Calculator {
                     break;
             default:
                 return;
-
-        }
-
+         }
     }
 
     updateScreen(
